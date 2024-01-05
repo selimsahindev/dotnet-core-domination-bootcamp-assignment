@@ -3,11 +3,8 @@ using TechCareerAssignment.Enums;
 
 namespace TechCareerAssignment.Models
 {
-    public class Room
+    public class Room : BaseModel
     {
-        [Key]
-        public int Id { get; set; }
-
         [Required]
         [MaxLength(80)]
         public string Name { get; set; }

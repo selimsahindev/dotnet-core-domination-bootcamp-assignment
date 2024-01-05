@@ -4,11 +4,8 @@ using TechCareerAssignment.Enums;
 
 namespace TechCareerAssignment.Models
 {
-    public class Reservation
+    public class Reservation : BaseModel
     {
-        [Key]
-        public int Id { get; set; }
-
         [Required]
         public int ClientId { get; set; }
 
