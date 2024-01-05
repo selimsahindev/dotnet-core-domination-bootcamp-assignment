@@ -7,6 +7,8 @@ The web API project I prepared for the .NET Core Domination Bootcamp organized b
 3. Run the migrations (dotnet ef database update) to create the database.
 4. Build and run the project.
 
+<br />
+
 ## Features and Best Practices
 
 | Feature                          | Description                                                  |
@@ -19,7 +21,7 @@ The web API project I prepared for the .NET Core Domination Bootcamp organized b
 
 <br />
 
-# Data Models
+## Data Models
 ### Reservation
 
 | Property       | Type                    | Attributes                  | Description                                            |
