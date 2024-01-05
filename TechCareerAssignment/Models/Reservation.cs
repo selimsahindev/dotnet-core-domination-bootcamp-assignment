@@ -18,7 +18,7 @@ namespace TechCareerAssignment.Models
         public int RoomId { get; set; }
 
         [Required]
-        public DateTime ReservationDate { get; set; }
+        public DateTime ReservationDate { get; set; } = DateTime.Now;
 
         [Required]
         public DateTime CheckInDate { get; set; }
@@ -27,7 +27,7 @@ namespace TechCareerAssignment.Models
         public DateTime CheckOutDate { get; set; }
 
         [Required]
-        public ReservationStatus Status { get; set; }
+        public ReservationStatus Status { get; set; } = ReservationStatus.Pending;
 
         // Navigation properties
         [ForeignKey("ClientId")]

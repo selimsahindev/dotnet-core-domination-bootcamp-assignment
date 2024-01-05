@@ -1,4 +1,6 @@
-﻿namespace TechCareerAssignment.Dtos
+﻿using TechCareerAssignment.Enums;
+
+namespace TechCareerAssignment.Dtos
 {
     public class ReservationUpdateDto
     {
@@ -9,6 +11,6 @@
         public DateTime ReservationDate { get; set; }
         public DateTime CheckInDate { get; set; }
         public DateTime CheckOutDate { get; set; }
-        public string Status { get; set; } = null!;
+        public ReservationStatus Status { get; set; } = ReservationStatus.Pending;
     }
 }
